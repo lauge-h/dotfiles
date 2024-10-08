@@ -1,0 +1,17 @@
+[config]
+link_on_import = "relative"
+dotpath = "dotdrop"
+
+[dotfiles.f_zshrc]
+src = "zshrc"
+dst = "~/.zshrc"
+link = "relative"
+
+[dotfiles.f_deno]
+src = "deno/bin/deno"
+dst = "~/.deno/bin/deno"
+link = "relative"
+chmod = "755"
+
+[profiles.default]
+dotfiles = ["ALL"]
